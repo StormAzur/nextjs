@@ -9,6 +9,7 @@ client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
+  require('http').createServer().listen(3000)
 });
 
 client.login(process.env.TOKEN);
